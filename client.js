@@ -23,6 +23,10 @@ const connect = function() {
     console.log(`Welcome to Snek`);
   });
 
+  conn.on("connect", () => {
+    conn.write("Name: KLy") // send to server upon connection
+  })
+
   return conn;
 };
 
