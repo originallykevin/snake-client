@@ -24,15 +24,13 @@ const connect = function() {
   });
 
   conn.on("connect", () => {
-    conn.write("Name: KLy") // send to server upon connection
+    conn.write("Name: KLy"); // send to server upon connection
     // setTimeout(() => {conn.write("Move: up")}, 2050) // snek will move up upon connection
-  })
-
- 
+  });
 
   return conn;
 };
 
 module.exports = {
   connect,
-}
+};
